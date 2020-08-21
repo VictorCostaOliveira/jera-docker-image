@@ -4,6 +4,7 @@ RUN apt-get update -qq && apt-get install -y nodejs
 
 # Ubuntu dependencies
 RUN apt-get install -y wget gnupg curl
+RUN apt-get install iptables sudo -y
 
 RUN apt update
 RUN apt install -y apt-transport-https ca-certificates curl software-properties-common \
